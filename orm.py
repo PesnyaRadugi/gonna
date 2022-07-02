@@ -17,9 +17,6 @@ class DataBase:
         except:
             pass
 
-    #def inspect(self):
-    #    print(self.__dict__)
-
     def __delete__(self, instance):
         self.connection.close()
         super().__delete__(self, instance)
